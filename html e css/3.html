@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+    <title>3</title>
+    <style>
+        @media screen and (min-width:800px) {
+            
+        
+        #container{
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "left browser right"
+            "left main right"
+            "left low right"
+            "footer footer footer";
+
+            grid-template-columns: 25% 50% 25%;
+            grid-template-rows: 10% 10% 60% 10% 10%;
+            height: 100vh;
+        }
+        #div1{
+            grid-area: header;
+            background-color: yellow;
+
+        }
+        #div2{
+            grid-area: left;
+            background-color: green;
+
+        }
+        #div3{
+            grid-area: browser;
+            background-color: red;
+
+        }
+        #div4{
+            grid-area: right;
+            background-color: yellowgreen;
+
+        }
+        #div5{
+            grid-area: main;
+            background-color: blue;
+
+        }
+        #div6{
+            grid-area: low;
+            background-color: green;
+
+        }
+        #div7{
+            grid-area: footer;
+            background-color: blue;
+
+        }}
+         @media screen and (max-width:800px) {
+            
+        
+        #container{
+            display: grid;
+            grid-template-areas: 
+            "header"
+            "left "
+            "browser" 
+            "right"
+            "main"
+            "low"
+            "footer";
+
+            grid-template-columns: 100%;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            height: 100vh;
+        }
+        #div1{
+            grid-area: header;
+            background-color: yellow;
+
+        }
+        #div2{
+            grid-area: left;
+            background-color: green;
+
+        }
+        #div3{
+            grid-area: browser;
+            background-color: red;
+
+        }
+        #div4{
+            grid-area: right;
+            background-color: yellowgreen;
+
+        }
+        #div5{
+            grid-area: main;
+            background-color: blue;
+
+        }
+        #div6{
+            grid-area: low;
+            background-color: green;
+
+        }
+        #div7{
+            grid-area: footer;
+            background-color: blue;
+
+        }}
+    </style>
+</head>
+<body>
+    <div id="container">
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
+<div id="div4"></div>
+<div id="div5"></div>
+<div id="div6"></div>
+<div id="div7"></div>
+</div>
+</body>
+</html>
