@@ -1,18 +1,19 @@
 #include <stdio.h>
-#include <time.h>
-#include <math.h>
+#include <stdlib.h>
 
-int main() {
-    clock_t inicio = clock();
+int main(){
+    int *vetor;
+    vetor = malloc(5 * sizeof(int));
+    for(int i=0;i<5;i++){
+        printf("digite os numeros: ");
+        scanf("%d",& vetor[i]);
 
-    volatile double x = 0.0;
-
-    while (((double)(clock() - inicio) / CLOCKS_PER_SEC) < 10.0) {
-        for (long long i = 0; i < 1000000; i++) {
-            x += sqrt((double)i);
-        }
     }
-
-    printf("Resultado: %f\n", x);
-    return 0;
+    for(int i=0;i<5;i++){
+        printf("%d\n ",vetor[i]);
+        
+        
+    }
+    free(vetor);
+   
 }
