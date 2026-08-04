@@ -9,7 +9,7 @@ public class Carro {
 	//métodos
 	
 	void ligar() {
-		System.out.println(this.modelo + " está ligando!");
+		System.out.println( this.modelo + " está ligando!");
 	}
 	
 	void desligar() {
