@@ -19,8 +19,14 @@ public class Usuario {
 
 
 
-	public void setEmail(String email) {
+	public void setEmail(String email, String senha) {
+		if(this.senha == senha) {
+			System.out.println("email alterado");
 		this.email = email;
+		}else {
+			System.err.println("senha incorreta");
+		}
+		
 	}
 
 
@@ -33,6 +39,7 @@ public class Usuario {
 
 	public void setSenha(String senha, String senhaAnterior) {
 		if(senhaAnterior == this.senha) {
+			System.out.println("senha alterada");
 		this.senha = senha;
 		} else {
 			System.err.println("senha incorreta");

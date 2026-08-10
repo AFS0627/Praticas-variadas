@@ -24,7 +24,9 @@ public class main {
 			System.out.println("nao logado");
 		}
 		
-		System.out.println(user.senha);
+		user.setSenha("12", "123");
+		user.setEmail("as", "12");
+		System.out.println(user.getEmail());
 
 	}
 
