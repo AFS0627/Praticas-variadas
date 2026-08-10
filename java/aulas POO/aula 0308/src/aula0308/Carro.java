@@ -6,6 +6,16 @@ public class Carro {
 	String placa;
 	String modelo;
 	
+	
+	// construtor padrão
+	
+	public Carro(int potencia, String placa, String modelo){
+		this.potencia = potencia;
+		this.placa = placa;
+		this.modelo = modelo;
+		
+	}
+	
 	//métodos
 	
 	void ligar() {
@@ -17,10 +27,10 @@ public class Carro {
 	}
 	
 	void acelerar(int intensidade) {
-		System.out.println(this.modelo + "Acelerando com intencidade " + intensidade);
+		System.out.println(this.modelo + " Acelerando com intencidade " + intensidade);
 	}
 	
 	void freiar(int intensidade) {
-		System.out.println(this.modelo + "freiando com intencidade " + intensidade);
+		System.out.println(this.modelo +  " freiando com intencidade " + intensidade);
 	}
 }
