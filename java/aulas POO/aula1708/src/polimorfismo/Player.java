@@ -1,15 +1,43 @@
 package polimorfismo;
 
-public class Player {
+public abstract class Player {
 
 	private String poder;
+	private String nome;
 	
-	
-	
-	public void mostrarPoder() {
-		System.out.println("Sou um Player não tenho poderes especificos");
-		
+	public Player(String nome) {
+		this.nome = nome;
 	}
+	
+	
+	
+	public abstract void mostrarPoder();
+
+
+
+	public String getPoder() {
+		return poder;
+	}
+
+
+
+	public void setPoder(String poder) {
+		this.poder = poder;
+	}
+
+
+
+	public String getNome() {
+		return nome;
+	}
+
+
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	
 	
 	
 }
