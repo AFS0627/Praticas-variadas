@@ -1,0 +1,30 @@
+
+- Diagrama de Máquina de Estados
+
+
+Despertador 
+
+ 
+
+O despertador precisa ser ativado para que o alarme seja disparado em um determinado momento. Para isso, foram identificados os seguintes “Estados” em que ele pode se encontrar:  
+
+(i) Desarmado
+(ii) Esperando
+(iii) Tocando
+
+Identifique os “Eventos” que fazem a mudança (“Transições) dos estados do despertador e apresente o seu Diagrama de Estados, conforme o modelo descrito pela UML.
+
+ 
+
+>> Principais eventos envolvidos no modelo:
+→ Armar alarme
+→ Desarmar Alarme
+ → Horário definido atingido
+→ Limite Toque atingido
+
+ 
+
+ >> Condições
+→ [ Horário definido = agora ]
+→ [ Horário definido = horário ]
+→ [ Horário definido + 3 minutos ]

@@ -1,0 +1,25 @@
+ Classes: Modelo Compra on-line
+
+
+Classes Compras 
+
+ 
+
+            	     A descrição do modelo do módulo Web de Compra-on-line prevê que ao iniciar uma compra, com o cliente já identificado, inicialmente o carrinho encontra-se no estado (i) Aguardando Venda.
+Os itens escolhidos pelo cliente passam a ser incluídos no carrinho de compras. Ao ter um item incluído, o carrinho passa a ter o estado (ii) Entrando Itens. Não tendo mais itens no carrinho ele retornará ao estado (i).
+Quando o cliente selecionar o botão “Finalizar Compra”, o carrinho com os seus itens inclusos muda de estado para (iii) Aguardando Pagamento, e a interface do Web Service bancário, ao reconhecer o cliente, retorna ao módulo de compra web que esta realizando a compra, para que o estado do carrinho seja alterado para (iv) Autorizando Pagamento, até que a informação de pagamento confirmado seja retornada pelo Web Service bancário ao módulo de compra web para que este encerre o processo de compra, torne o carrinho vazio e mude o seu estado novamente para (i) Aguardando Venda.    
+ 	 
+ 	Módulo Web de Compra-on-line – Estados da classe Carrinho:
+
+(i) Aguardando Venda
+(ii) Entrando Itens
+(iii) Aguardando Pagamento
+(iv) Autorizando Pagamento
+ 	 
+ 	Web Service bancário – Mensagens:
+
+→ cliente não reconhecido
+→ cliente ok – realizando compra
+→ compra confirmada
+→ compra recusada
+ 
