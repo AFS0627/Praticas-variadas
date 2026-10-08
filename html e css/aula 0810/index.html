@@ -6,15 +6,35 @@
     <title>Document</title>
 </head>
 <body>
+    <p>cadastro:</p>
     <form action="cadastro.php" method="GET">
 <input type="text" name="nome">
 <input type="text" name="idade">
 <input type="submit" value="Enviar">
 
     </form>
+    <br>
+    <p>buscar algo:</p>
     <form action="buscar.php" method="GET">
 <input type="text" name="termo">
 <input type="submit" value="buscar">
+
+    </form>
+    <br>
+    <p>Login inseguro:</p>
+    </form>
+    <form action="loginInseguro.php" method="post">
+<input type="text" name="usuario">
+<input type="password" name="senha">
+<input type="submit" value="login">
+
+    </form>
+    <p>Login seguro:</p>
+    </form>
+    <form action="loginSeguro.php" method="post">
+<input type="text" name="usuario">
+<input type="password" name="senha">
+<input type="submit" value="login">
 
     </form>
 </body>
